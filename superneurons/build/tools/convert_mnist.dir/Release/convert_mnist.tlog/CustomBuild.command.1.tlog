@@ -1,0 +1,10 @@
+^D:\ZCODE\TXJG\SUPERNEURONS\TOOLS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/zCode/txjg/superneurons -BD:/zCode/txjg/superneurons/build --check-stamp-file D:/zCode/txjg/superneurons/build/tools/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

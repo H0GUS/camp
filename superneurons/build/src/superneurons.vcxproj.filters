@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\gpu_malloc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\initializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\base_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\base_network_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\base_structure_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\batch_normalization_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\concat_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\cudnn_activation_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\cudnn_convolution_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\cudnn_pooling_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\data_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\dropout_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\fork_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\fully_connected_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\join_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\local_response_norm_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\padding_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\softmax_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\liveness.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\mem_control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\recompute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\solver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\stream_singleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\tensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\base_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\binary_dumper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\chainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\image_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\lru.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\parallel_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\preprocess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\saver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\superneurons_math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\tensor_queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\layer\padding_layer.cu">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\layer\softmax_layer.cu">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\solver.cu">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\tensor.cu">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_padding_layer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_softmax_layer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_solver.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_tensor.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{76479E96-723D-3DB3-8D03-82F800773F4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5898B676-9979-3D59-AA4F-5560B9B45DE1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

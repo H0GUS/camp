@@ -1,0 +1,7 @@
+﻿  Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/Release/superneurons_generated_padding_layer.cu.obj
+  CMake Error at superneurons_generated_padding_layer.cu.obj.Release.cmake:216 (message):
+    Error generating
+    D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/Release/superneurons_generated_padding_layer.cu.obj
+  
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(249,5): error MSB8066: “D:\zCode\txjg\superneurons\src\layer\padding_layer.cu;D:\zCode\txjg\superneurons\src\layer\softmax_layer.cu;D:\zCode\txjg\superneurons\src\solver.cu;D:\zCode\txjg\superneurons\src\tensor.cu;D:\zCode\txjg\superneurons\src\CMakeLists.txt”的自定义生成已退出，代码为 1。

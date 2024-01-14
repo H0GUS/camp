@@ -1,0 +1,74 @@
+^D:\ZCODE\TXJG\SUPERNEURONS\SRC\LAYER\PADDING_LAYER.CU
+setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools/MSVC/14.37.32822/bin/HostWin32/x86" -D build_configuration:STRING=Release -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/Release/superneurons_generated_padding_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/Release/superneurons_generated_padding_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_padding_layer.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ZCODE\TXJG\SUPERNEURONS\SRC\LAYER\SOFTMAX_LAYER.CU
+setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools/MSVC/14.37.32822/bin/HostWin32/x86" -D build_configuration:STRING=Release -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/Release/superneurons_generated_softmax_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/Release/superneurons_generated_softmax_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_softmax_layer.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ZCODE\TXJG\SUPERNEURONS\SRC\SOLVER.CU
+setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools/MSVC/14.37.32822/bin/HostWin32/x86" -D build_configuration:STRING=Release -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//Release/superneurons_generated_solver.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//Release/superneurons_generated_solver.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_solver.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ZCODE\TXJG\SUPERNEURONS\SRC\TENSOR.CU
+setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools/MSVC/14.37.32822/bin/HostWin32/x86" -D build_configuration:STRING=Release -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//Release/superneurons_generated_tensor.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//Release/superneurons_generated_tensor.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_tensor.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ZCODE\TXJG\SUPERNEURONS\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/zCode/txjg/superneurons -BD:/zCode/txjg/superneurons/build --check-stamp-file D:/zCode/txjg/superneurons/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

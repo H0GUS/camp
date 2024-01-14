@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D5F8F87-517A-3A75-B9BD-F993498739A0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>superneurons</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">superneurons.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">superneurons</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">superneurons.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">superneurons</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">superneurons.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">superneurons</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">superneurons.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">superneurons</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++11 -W -Wno-unused-parameter</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;RELEASE;CMAKE_INTDIR="Debug";superneurons_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;RELEASE;CMAKE_INTDIR=\"Debug\";superneurons_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcublas.so;\data\lwang53\lib\cuDNN7.0\lib64\libcudnn.so;\usr\local\cuda\lib64\libcufft.so;D:\Anaconda\Library\lib\jpeg.lib;\data\lwang53\lib\glog\lib\libglog.so;-lpthread;-lm;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/zCode/txjg/superneurons/build/src/Debug/superneurons.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/zCode/txjg/superneurons/build/src/Debug/superneurons.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++11 -W -Wno-unused-parameter</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RELEASE;CMAKE_INTDIR="Release";superneurons_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RELEASE;CMAKE_INTDIR=\"Release\";superneurons_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcublas.so;\data\lwang53\lib\cuDNN7.0\lib64\libcudnn.so;\usr\local\cuda\lib64\libcufft.so;D:\Anaconda\Library\lib\jpeg.lib;\data\lwang53\lib\glog\lib\libglog.so;-lpthread;-lm;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/zCode/txjg/superneurons/build/src/Release/superneurons.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/zCode/txjg/superneurons/build/src/Release/superneurons.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++11 -W -Wno-unused-parameter</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RELEASE;CMAKE_INTDIR="MinSizeRel";superneurons_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RELEASE;CMAKE_INTDIR=\"MinSizeRel\";superneurons_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcublas.so;\data\lwang53\lib\cuDNN7.0\lib64\libcudnn.so;\usr\local\cuda\lib64\libcufft.so;D:\Anaconda\Library\lib\jpeg.lib;\data\lwang53\lib\glog\lib\libglog.so;-lpthread;-lm;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/zCode/txjg/superneurons/build/src/MinSizeRel/superneurons.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/zCode/txjg/superneurons/build/src/MinSizeRel/superneurons.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++11 -W -Wno-unused-parameter</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RELEASE;CMAKE_INTDIR="RelWithDebInfo";superneurons_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RELEASE;CMAKE_INTDIR=\"RelWithDebInfo\";superneurons_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\cuda\include;\data\lwang53\lib\cuDNN7.0\include;D:\Anaconda\Library\include;\data\lwang53\lib\glog\include;D:\zCode\txjg\superneurons\include;D:\zCode\txjg\superneurons\src;\usr\include;\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcudart.so;\usr\local\cuda\lib64\libcublas.so;\data\lwang53\lib\cuDNN7.0\lib64\libcudnn.so;\usr\local\cuda\lib64\libcufft.so;D:\Anaconda\Library\lib\jpeg.lib;\data\lwang53\lib\glog\lib\libglog.so;-lpthread;-lm;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/zCode/txjg/superneurons/build/src/RelWithDebInfo/superneurons.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/zCode/txjg/superneurons/build/src/RelWithDebInfo/superneurons.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\layer\padding_layer.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_padding_layer.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_padding_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_padding_layer.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_padding_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_padding_layer.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.MinSizeRel.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_padding_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_padding_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_padding_layer.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.RelWithDebInfo.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_padding_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\layer\softmax_layer.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_softmax_layer.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_softmax_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_softmax_layer.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_softmax_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_softmax_layer.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.MinSizeRel.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_softmax_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/$(Configuration)/superneurons_generated_softmax_layer.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_softmax_layer.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.RelWithDebInfo.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_softmax_layer.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\solver.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_solver.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_solver.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_solver.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_solver.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_solver.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_solver.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_solver.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_solver.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.MinSizeRel.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_solver.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_solver.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_solver.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_solver.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.RelWithDebInfo.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_solver.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\tensor.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_tensor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_tensor.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_tensor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_tensor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_tensor.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_tensor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_tensor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_tensor.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.MinSizeRel.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_tensor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/CMakeFiles/superneurons.dir/$(Configuration)/superneurons_generated_tensor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj -D generated_cubin_file:STRING=D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//$(Configuration)/superneurons_generated_tensor.cu.obj.cubin.txt -P D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir//superneurons_generated_tensor.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.RelWithDebInfo.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_tensor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/zCode/txjg/superneurons/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/zCode/txjg/superneurons -BD:/zCode/txjg/superneurons/build --check-stamp-file D:/zCode/txjg/superneurons/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\FindCUDA\run_nvcc.cmake;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/zCode/txjg/superneurons/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/zCode/txjg/superneurons -BD:/zCode/txjg/superneurons/build --check-stamp-file D:/zCode/txjg/superneurons/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\FindCUDA\run_nvcc.cmake;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/zCode/txjg/superneurons/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/zCode/txjg/superneurons -BD:/zCode/txjg/superneurons/build --check-stamp-file D:/zCode/txjg/superneurons/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\FindCUDA\run_nvcc.cmake;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/zCode/txjg/superneurons/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/zCode/txjg/superneurons -BD:/zCode/txjg/superneurons/build --check-stamp-file D:/zCode/txjg/superneurons/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.26\Modules\FindCUDA\run_nvcc.cmake;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_padding_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\superneurons_generated_softmax_layer.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_solver.cu.obj.depend;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.cmake.pre-gen;D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\superneurons_generated_tensor.cu.obj.depend;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\zCode\txjg\superneurons\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_padding_layer.cu.obj" />
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\layer\$(Configuration)\superneurons_generated_softmax_layer.cu.obj" />
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_solver.cu.obj" />
+    <Object Include="D:\zCode\txjg\superneurons\build\src\CMakeFiles\superneurons.dir\$(Configuration)\superneurons_generated_tensor.cu.obj" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\gpu_malloc.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\initializer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\base_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\base_network_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\base_structure_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\batch_normalization_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\concat_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\cudnn_activation_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\cudnn_convolution_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\cudnn_pooling_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\data_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\dropout_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\fork_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\fully_connected_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\join_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\local_response_norm_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\padding_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\layer\softmax_layer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\liveness.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\mem_control.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\network.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\recompute.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\registry.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\solver.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\stream_singleton.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\tensor.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\base_reader.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\binary_dumper.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\chainer.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\image_reader.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\lru.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\parallel_reader.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\preprocess.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\saver.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\superneurons_math.cpp" />
+    <ClCompile Include="D:\zCode\txjg\superneurons\src\util\tensor_queue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\zCode\txjg\superneurons\build\ZERO_CHECK.vcxproj">
+      <Project>{E6B28ED2-3DF0-3BD8-821A-0FBD90CF1803}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

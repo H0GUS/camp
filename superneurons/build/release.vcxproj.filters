@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\build\CMakeFiles\5ebf05066a492074a18e446ac425fa05\release.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\zCode\txjg\superneurons\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\zCode\txjg\superneurons\build\CMakeFiles\release" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1A0EC99D-1E13-3090-80BE-FE4AF7B47E17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

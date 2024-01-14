@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.26/Modules/FindCUDA/run_nvcc.cmake
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_padding_layer.cu.obj.cmake.pre-gen
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_padding_layer.cu.obj.depend
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_softmax_layer.cu.obj.cmake.pre-gen
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/layer/superneurons_generated_softmax_layer.cu.obj.depend
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/superneurons_generated_solver.cu.obj.cmake.pre-gen
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/superneurons_generated_solver.cu.obj.depend
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/superneurons_generated_tensor.cu.obj.cmake.pre-gen
+D:/zCode/txjg/superneurons/build/src/CMakeFiles/superneurons.dir/superneurons_generated_tensor.cu.obj.depend
+D:/zCode/txjg/superneurons/src/CMakeLists.txt
